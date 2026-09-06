@@ -8,6 +8,7 @@ public class AccountTest {
 		int chon;
 		do {
 			menu();
+			
 			System.out.print("Nhập lựa chọn: ");
 			chon = sc.nextInt();
 			sc.nextLine();

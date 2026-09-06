@@ -9,15 +9,12 @@ public class AccountList {
 		soLuongHienTai = 0;
 	}
 
-	public AccountList(int capacity) {
-		ds = new Account[capacity];
+	public AccountList(int n) {
+		ds = new Account[n];
 		soLuongHienTai = 0;
 	}
 
 	private void tangKichThuoc() {
-		//cach 1
-		//ds = Arrays.copyOf(ds, ds.length * 2);
-		//cach 2 cho de hieu
 		Account[] temp = new Account[ds.length * 2];
 		temp = Arrays.copyOf(ds, ds.length * 2);
 		ds = temp;
