@@ -1,6 +1,6 @@
 package iuh.bai3;
 
-public class MainTestTG {
+public class TamGiacTesting {
 	public static void main(String[] args) {
 		TamGiac tg1 = new TamGiac(-3, 4, 5);      
 		TamGiac tg2 = new TamGiac(1, 2, 10);      

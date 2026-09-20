@@ -1,0 +1,25 @@
+@Override
+	public String toString() {
+		
+		DecimalFormat fomatter = new DecimalFormat("#,##0.00VND");
+		String s= String.format("| %-10s | %-15s | %10s | %18s |", getMaChuyen(),getTaiXe(),getSoXe(),fomatter.format(getDoanhThu()));
+		return 	s;
+	}
+của chuyến xe
+
+//
+	@Override
+	public String toString() 
+	{
+		String s= String.format(" %10d | %8dKm |", getSoTuyen(),getSoKm());
+		return  super.toString() + s;
+	}
+của nội thành
+
+@Override
+	public String toString() 
+	{
+		String s= String.format(" %-20s | %10d ngày |", getNoiDen(),getSoNgayDiDuoc());
+		return super.toString() + s;
+	}
+của ngoại thành
